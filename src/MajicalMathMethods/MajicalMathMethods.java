@@ -28,7 +28,7 @@ public class MajicalMathMethods extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        backGroundJPanel = new javax.swing.JPanel();
         titleLbl = new javax.swing.JLabel();
         largerPromptLbl = new javax.swing.JLabel();
         largerTxtFeild2 = new javax.swing.JTextField();
@@ -58,33 +58,41 @@ public class MajicalMathMethods extends javax.swing.JFrame {
         radialsPromptLbl = new javax.swing.JLabel();
         squareRootTxtFeild1 = new javax.swing.JTextField();
         squareRootBtn = new javax.swing.JButton();
+        radialsOutputLbl = new javax.swing.JLabel();
+        largestOutputLbl = new javax.swing.JLabel();
+        smallestOutputLbl = new javax.swing.JLabel();
+        powerOutputLbl = new javax.swing.JLabel();
+        hypoenuseOutputLbl = new javax.swing.JLabel();
+        roundedDownOutputLbl = new javax.swing.JLabel();
+        roundedUpOutputLbl = new javax.swing.JLabel();
+        squareRootOutputLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        backGroundJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         titleLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         titleLbl.setForeground(new java.awt.Color(0, 204, 0));
         titleLbl.setText("Magical Math Methods");
-        jPanel1.add(titleLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
+        backGroundJPanel.add(titleLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
 
         largerPromptLbl.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         largerPromptLbl.setText("Enter two numbers and press the button. The program will output the larger number");
-        jPanel1.add(largerPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 540, -1));
+        backGroundJPanel.add(largerPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 540, -1));
 
         largerTxtFeild2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 largerTxtFeild2ActionPerformed(evt);
             }
         });
-        jPanel1.add(largerTxtFeild2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 30, 30));
+        backGroundJPanel.add(largerTxtFeild2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 30, 30));
 
         smallerTxtFeild2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 smallerTxtFeild2ActionPerformed(evt);
             }
         });
-        jPanel1.add(smallerTxtFeild2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 30, 30));
+        backGroundJPanel.add(smallerTxtFeild2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 30, 30));
 
         radialsBtn.setText("Number In Radials");
         radialsBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -92,25 +100,25 @@ public class MajicalMathMethods extends javax.swing.JFrame {
                 radialsBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(radialsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 630, 120, 30));
+        backGroundJPanel.add(radialsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 630, 120, 30));
 
         smallerPromptLbl.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         smallerPromptLbl.setText("Enter two numbers and press the button. The program will output the smaller number");
-        jPanel1.add(smallerPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+        backGroundJPanel.add(smallerPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
 
         largerTxtFeild1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 largerTxtFeild1ActionPerformed(evt);
             }
         });
-        jPanel1.add(largerTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 30, 30));
+        backGroundJPanel.add(largerTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 30, 30));
 
         powerTxtFeild2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 powerTxtFeild2ActionPerformed(evt);
             }
         });
-        jPanel1.add(powerTxtFeild2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 30, 30));
+        backGroundJPanel.add(powerTxtFeild2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 30, 30));
 
         largestBtn.setText("Lergest");
         largestBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -118,25 +126,25 @@ public class MajicalMathMethods extends javax.swing.JFrame {
                 largestBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(largestBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, 120, 30));
+        backGroundJPanel.add(largestBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, 120, 30));
 
         powerPromptLbl.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         powerPromptLbl.setText("Enter two numbers and press the button. the program will output the total of the first number to the power of the second");
-        jPanel1.add(powerPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
+        backGroundJPanel.add(powerPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
 
         smallerTxtFeild1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 smallerTxtFeild1ActionPerformed(evt);
             }
         });
-        jPanel1.add(smallerTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 30, 30));
+        backGroundJPanel.add(smallerTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 30, 30));
 
         hypotenuseTxtFeild2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hypotenuseTxtFeild2ActionPerformed(evt);
             }
         });
-        jPanel1.add(hypotenuseTxtFeild2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, 30, 30));
+        backGroundJPanel.add(hypotenuseTxtFeild2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, 30, 30));
 
         smallerBtn.setText("Smallest");
         smallerBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -144,25 +152,25 @@ public class MajicalMathMethods extends javax.swing.JFrame {
                 smallerBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(smallerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 120, 30));
+        backGroundJPanel.add(smallerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 120, 30));
 
         hypotenusePromptLbl.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        hypotenusePromptLbl.setText("Enter two lengths of a right angle triangle. The program will output the hypotonus of the triangle.");
-        jPanel1.add(hypotenusePromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
+        hypotenusePromptLbl.setText("Enter two lengths of a right angle triangle. The program will output the hypotenuse of the triangle.");
+        backGroundJPanel.add(hypotenusePromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
 
         powerTxtFeild1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 powerTxtFeild1ActionPerformed(evt);
             }
         });
-        jPanel1.add(powerTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 30, 30));
+        backGroundJPanel.add(powerTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 30, 30));
 
         radialsTxtFeild1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 radialsTxtFeild1ActionPerformed(evt);
             }
         });
-        jPanel1.add(radialsTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 630, 30, 30));
+        backGroundJPanel.add(radialsTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 630, 30, 30));
 
         powerBtn.setText("Power");
         powerBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -170,18 +178,18 @@ public class MajicalMathMethods extends javax.swing.JFrame {
                 powerBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(powerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 120, 30));
+        backGroundJPanel.add(powerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 120, 30));
 
         roundDownPromptLbl.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         roundDownPromptLbl.setText("Enter a decimal number. The program will output the number rounded down to the nearest integer. ");
-        jPanel1.add(roundDownPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
+        backGroundJPanel.add(roundDownPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
 
         hypotenuseTxtFeild1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hypotenuseTxtFeild1ActionPerformed(evt);
             }
         });
-        jPanel1.add(hypotenuseTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 30, 30));
+        backGroundJPanel.add(hypotenuseTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 30, 30));
 
         hypotenuseBtn.setText("Hypotenuse");
         hypotenuseBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -189,18 +197,18 @@ public class MajicalMathMethods extends javax.swing.JFrame {
                 hypotenuseBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(hypotenuseBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 120, 30));
+        backGroundJPanel.add(hypotenuseBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 120, 30));
 
         roundUpPromptLbl.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         roundUpPromptLbl.setText("Enter a decimal number. The program will output the number rounded up to the nearest integer. ");
-        jPanel1.add(roundUpPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
+        backGroundJPanel.add(roundUpPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
 
         roundDownTxtFeild1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 roundDownTxtFeild1ActionPerformed(evt);
             }
         });
-        jPanel1.add(roundDownTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 30, 30));
+        backGroundJPanel.add(roundDownTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 30, 30));
 
         roundDownBtn.setText("Rounded Down");
         roundDownBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -208,18 +216,18 @@ public class MajicalMathMethods extends javax.swing.JFrame {
                 roundDownBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(roundDownBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, 120, 30));
+        backGroundJPanel.add(roundDownBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, 120, 30));
 
         squareRootPromptLbl.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         squareRootPromptLbl.setText("Enter a number and press the button. The program will output the numbers square root.");
-        jPanel1.add(squareRootPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, -1));
+        backGroundJPanel.add(squareRootPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, -1));
 
         roundUpTxtFeild1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 roundUpTxtFeild1ActionPerformed(evt);
             }
         });
-        jPanel1.add(roundUpTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 30, 30));
+        backGroundJPanel.add(roundUpTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 30, 30));
 
         roundUpBtn.setText("Rounded Up");
         roundUpBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -227,18 +235,18 @@ public class MajicalMathMethods extends javax.swing.JFrame {
                 roundUpBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(roundUpBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 470, 120, 30));
+        backGroundJPanel.add(roundUpBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 470, 120, 30));
 
         radialsPromptLbl.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         radialsPromptLbl.setText("Enter an angle in degrees. The program will output the number in radials.");
-        jPanel1.add(radialsPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 600, -1, -1));
+        backGroundJPanel.add(radialsPromptLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 600, -1, -1));
 
         squareRootTxtFeild1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 squareRootTxtFeild1ActionPerformed(evt);
             }
         });
-        jPanel1.add(squareRootTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 550, 30, 30));
+        backGroundJPanel.add(squareRootTxtFeild1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 550, 30, 30));
 
         squareRootBtn.setText("Square Root");
         squareRootBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -246,18 +254,42 @@ public class MajicalMathMethods extends javax.swing.JFrame {
                 squareRootBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(squareRootBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 550, 120, 30));
+        backGroundJPanel.add(squareRootBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 550, 120, 30));
+
+        radialsOutputLbl.setText("...");
+        backGroundJPanel.add(radialsOutputLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 640, -1, -1));
+
+        largestOutputLbl.setText("...");
+        backGroundJPanel.add(largestOutputLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 80, -1, -1));
+
+        smallestOutputLbl.setText("...");
+        backGroundJPanel.add(smallestOutputLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 160, -1, -1));
+
+        powerOutputLbl.setText("...");
+        backGroundJPanel.add(powerOutputLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 240, -1, -1));
+
+        hypoenuseOutputLbl.setText("...");
+        backGroundJPanel.add(hypoenuseOutputLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 320, -1, -1));
+
+        roundedDownOutputLbl.setText("...");
+        backGroundJPanel.add(roundedDownOutputLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 400, -1, -1));
+
+        roundedUpOutputLbl.setText("...");
+        backGroundJPanel.add(roundedUpOutputLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 480, -1, -1));
+
+        squareRootOutputLbl.setText("...");
+        backGroundJPanel.add(squareRootOutputLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 560, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(backGroundJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 671, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(backGroundJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 671, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -380,20 +412,24 @@ public class MajicalMathMethods extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel backGroundJPanel;
+    private javax.swing.JLabel hypoenuseOutputLbl;
     private javax.swing.JButton hypotenuseBtn;
     private javax.swing.JLabel hypotenusePromptLbl;
     private javax.swing.JTextField hypotenuseTxtFeild1;
     private javax.swing.JTextField hypotenuseTxtFeild2;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel largerPromptLbl;
     private javax.swing.JTextField largerTxtFeild1;
     private javax.swing.JTextField largerTxtFeild2;
     private javax.swing.JButton largestBtn;
+    private javax.swing.JLabel largestOutputLbl;
     private javax.swing.JButton powerBtn;
+    private javax.swing.JLabel powerOutputLbl;
     private javax.swing.JLabel powerPromptLbl;
     private javax.swing.JTextField powerTxtFeild1;
     private javax.swing.JTextField powerTxtFeild2;
     private javax.swing.JButton radialsBtn;
+    private javax.swing.JLabel radialsOutputLbl;
     private javax.swing.JLabel radialsPromptLbl;
     private javax.swing.JTextField radialsTxtFeild1;
     private javax.swing.JButton roundDownBtn;
@@ -402,11 +438,15 @@ public class MajicalMathMethods extends javax.swing.JFrame {
     private javax.swing.JButton roundUpBtn;
     private javax.swing.JLabel roundUpPromptLbl;
     private javax.swing.JTextField roundUpTxtFeild1;
+    private javax.swing.JLabel roundedDownOutputLbl;
+    private javax.swing.JLabel roundedUpOutputLbl;
     private javax.swing.JButton smallerBtn;
     private javax.swing.JLabel smallerPromptLbl;
     private javax.swing.JTextField smallerTxtFeild1;
     private javax.swing.JTextField smallerTxtFeild2;
+    private javax.swing.JLabel smallestOutputLbl;
     private javax.swing.JButton squareRootBtn;
+    private javax.swing.JLabel squareRootOutputLbl;
     private javax.swing.JLabel squareRootPromptLbl;
     private javax.swing.JTextField squareRootTxtFeild1;
     private javax.swing.JLabel titleLbl;
